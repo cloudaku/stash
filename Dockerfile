@@ -6,10 +6,10 @@ MAINTAINER Tom Eklöf tom@linux-konsult.com
 
 # Prepare all the files
 ENV AppName stash
-ENV AppVer 2.10.1
+ENV AppVer 3.1.3
 ENV STASH_HOME /data/stash-home
 ENV STASHUSR stash
-ADD http://www.atlassian.com/software/stash/downloads/binary/atlassian-stash-2.10.1.tar.gz /opt/atlassian/
+ADD http://www.atlassian.com/software/stash/downloads/binary/atlassian-stash-3.1.3.tar.gz /opt/atlassian/
 # stash.rb is to create the database
 ADD ./chef/recipes/stash.rb /etc/chef/cookbooks/database/recipes/stash.rb
 ADD ./install_cmds.sh /install_cmds.sh
